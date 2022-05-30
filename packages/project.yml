@@ -1,0 +1,11 @@
+packages:
+  - name: test
+    actions:
+      - name: postEmail
+        limits:
+          timeout: 5000
+          memory: 128
+environment:
+  API_KEY: ${API_KEY}
+  MAILGUN_URL: ${MAILGUN_URL}
+  DOMAIN: ${DOMAIN}
